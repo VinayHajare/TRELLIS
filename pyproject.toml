@@ -12,6 +12,7 @@ authors = [
     { name = "Microsoft TRELLIS Team" }  # Credit original authors
 ]
 license = { file = "LICENSE" }
+packages = ["trellis"]
 requires-python = ">=3.8"
 dependencies = [
     "pytorch>=2.4.0",
