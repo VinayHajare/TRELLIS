@@ -3,8 +3,8 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "trellis-3d"  
-version = "0.1.0" 
+name = "trellis-3d"
+version = "0.1.0"
 description = "A fork of Microsoft's TRELLIS for scalable 3D generation from images and text."
 readme = "README.md"
 authors = [
@@ -12,7 +12,6 @@ authors = [
     { name = "Microsoft TRELLIS Team" }  # Credit original authors
 ]
 license = { file = "LICENSE" }
-packages = ["trellis"]
 requires-python = ">=3.8"
 dependencies = [
     "pytorch>=2.4.0",
@@ -40,3 +39,7 @@ dependencies = [
 "Homepage" = "https://trellis3d.github.io/"
 "Source" = "https://github.com/VinayHajare/TRELLIS"
 "Original Repository" = "https://github.com/microsoft/TRELLIS"
+
+[tool.setuptools.packages.find]
+where = ["."]  # Adjust the path if your package is in a subdirectory
+include = ["trellis*"]  # Include only the trellis package
